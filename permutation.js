@@ -1,4 +1,4 @@
-/**
+/** Cracking the coding interview 82/708
  * design an algorithm to return the number of 
  * all permutations of a string;
  * Assume all characters are unique.
