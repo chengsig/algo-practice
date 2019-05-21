@@ -8,13 +8,17 @@
  * => {'cab', 'acb', 'abc', 'cba', 'bca', 'bac'} //6
  */
 
-function combination(str) {
+function permutation(str) {
+    //base case
     if (str.length === 0) return 0;
     if (str.length === 1) return 1;
-
-    
-    if (str.length === 2) 
-  
+    let curr = 1 //starting the progress part
+    let combo = 1;
+    while (curr < str.length) {
+        combo = (combo + 1) * curr;
+        curr++;
+    }
+    return combo;
 }
 
-module.exports = combination
+module.exports = permutation
