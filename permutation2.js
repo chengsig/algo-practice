@@ -6,6 +6,7 @@
  * 
  */
 
+ //[1,2,3]
 function permutation2(arr) {
     let result = [];
     
@@ -20,9 +21,22 @@ function permutation2(arr) {
             [arr[i], arr[j]] = [arr[j], arr[i]];
         }
     } 
-    
+
     directed_permutation(0);
     return result;
 }
 
 module.exports = permutation2
+
+/**
+ * i = 0, result = [], arr = [1,2,3]
+ * j = 0, arr = [1,2,3]
+ *      
+ * j = 1, arr = [2,1,3]
+ * 
+ * j = 2, arr = [3,2,1]
+ * 
+ * i = 1, 
+ * 
+ * 
+ */
