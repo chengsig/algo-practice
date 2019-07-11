@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox 0 — starting code</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background: olive;
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            margin: 0;
+        }
+
+        .flex-container1 {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #ffc0cb63;
+        }
+
+        .flex-container1>article {
+            padding: 10px;
+            margin: 10px;
+            background: #00ff9540;
+        }
+
+        .flex-container2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #ffc0cb63;
+        }
+
+        .flex-container2>article {
+            padding: 10px;
+            margin: 10px;
+            background: #00ff9540;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sample flexbox example</h1>
+    </header>
+
+    <section>
+        <p>
+            flex-container1 { display: flex; flex-wrap: wrap } <br />
+        </p>
+        <div class="flex-container1">
+            <article>
+                <h2>First article</h2>
+            </article>
+            <article>
+                <h2>Second article</h2>
+            </article>
+            <article>
+                <h2>Third article</h2>
+            </article>
+        </div>
+
+        <p>
+                .flex-container2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    background-color: #ffc0cb63;
+                }
+        </p>
+        <div class="flex-container2">
+            <article>
+                <h2>First article</h2>
+            </article>
+            <article>
+                <h2>Second article</h2>
+            </article>
+            <article>
+                <h2>Third article</h2>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>
